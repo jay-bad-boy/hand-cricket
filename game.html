@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Cricket Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Hand Cricket Game</h1>
+
+        <div class="score-board">
+            <div class="computer-screen">
+                <h2>Computer</h2>
+                <p class="big-choice"><span id="computer-choice">None</span></p>
+                <p id="game-status" class="status">Bowling</p>
+                <p id="computer-score" class="score">Score: 0</p>
+            </div>
+
+            <div class="player-screen">
+                <h2>PLAYER</h2>
+                <p class="big-choice"><span id="player-choice">None</span></p>
+                <p id="game-status-player" class="status">Batting</p>
+                <p id="player-score" class="score">Score: 0</p>
+            </div>
+        </div>
+
+        <div class="innings-message" id="innings-message">Player Batting</div>
+
+        <div class="choices" id="number-buttons">
+            <h2>Choose your number:</h2>
+            <button class="choice" onclick="playGame(1)">1</button>
+            <button class="choice" onclick="playGame(2)">2</button>
+            <button class="choice" onclick="playGame(3)">3</button>
+            <button class="choice" onclick="playGame(4)">4</button>
+            <button class="choice" onclick="playGame(5)">5</button>
+            <button class="choice" onclick="playGame(6)">6</button>
+        </div>
+
+        <div id="game-controls" style="display:none;">
+            <div id="result-message"></div>
+            <button id="reset-btn" onclick="resetGame()">Reset Game</button>
+            <button class="home-btn" onclick="window.location.href='index.html'">Home</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

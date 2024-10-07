@@ -1,0 +1,224 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Home Container */
+.home-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px; /* Limit max width for larger screens */
+}
+
+/* Headings */
+h1 {
+    color: #e63946;
+}
+
+h2 {
+    color: #457b9d;
+}
+
+/* Buttons */
+.start-btn, .about-btn, .how-to-play-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #457b9d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    width: 100%; /* Full-width buttons */
+}
+
+.start-btn:hover, .about-btn:hover, .how-to-play-btn:hover {
+    background-color: #1d3557;
+}
+
+/* Info Sections */
+.info-section {
+    background-color: #f1faee;
+    padding: 20px;
+    border: 2px solid #457b9d;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.close-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.close-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Game Container */
+.game-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px; /* Limit max width for larger screens */
+}
+
+/* Scoreboard styling */
+.score-board {
+    display: flex;
+    flex-direction: column; /* Stack screens vertically */
+    margin-bottom: 20px;
+}
+
+/* Computer and Player Screens */
+.computer-screen, .player-screen {
+    width: 100%; /* Full width */
+    padding: 20px;
+    border: 2px solid #457b9d;
+    border-radius: 10px;
+    background-color: #f1faee;
+    margin-bottom: 20px; /* Space between screens */
+    position: relative; /* For absolute positioning of score/status */
+}
+
+/* Big Choice Display */
+.big-choice {
+    font-size: 48px;
+    font-weight: bold;
+    color: #e63946;
+    margin: 15px 0;
+}
+
+/* Status Display */
+.status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.score {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    font-size: 20px;
+}
+
+/* Innings Message */
+.innings-message {
+    font-size: 28px;
+    font-weight: bold;
+    color: #457b9d;
+    margin: 20px 0;
+    display: none; /* Initially hidden */
+}
+
+/* Choices */
+.choices {
+    margin: 20px 0;
+}
+
+.choice {
+    margin: 5px;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #457b9d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.choice:hover {
+    background-color: #1d3557;
+}
+
+/* Game Controls */
+#game-controls {
+    margin-top: 20px;
+}
+
+/* Reset and Home Buttons */
+#reset-btn, .home-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 100%; /* Full-width buttons */
+}
+
+#reset-btn:hover, .home-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Result Message */
+#result-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #457b9d;
+    margin-bottom: 15px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Add padding for small screens */
+    }
+
+    .home-container, .game-container {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust font size for headings */
+    }
+
+    .start-btn, .about-btn, .how-to-play-btn, .close-btn,
+    #reset-btn, .home-btn {
+        font-size: 16px; /* Adjust button font size */
+        padding: 12px 20px; /* Adjust padding for buttons */
+    }
+
+    .big-choice {
+        font-size: 36px; /* Smaller font size for mobile */
+    }
+
+    .status, .score, #result-message {
+        font-size: 18px; /* Adjust font size for scores and messages */
+    }
+
+    .innings-message {
+        font-size: 24px; /* Adjust innings message size for mobile */
+    }
+}

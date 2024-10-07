@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Cricket Game - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="home-container">
+        <h1>Welcome to Hand Cricket Game!</h1>
+        <p>Test your skills in this exciting hand cricket game! Choose your numbers wisely and see if you can beat the computer.</p>
+
+        <button class="start-btn" onclick="window.location.href='game.html'">Start Game</button>
+        <button class="about-btn" onclick="showAbout()">About</button>
+        <button class="how-to-play-btn" onclick="showHowToPlay()">How to Play</button>
+
+        <div id="about-section" class="info-section" style="display:none;">
+            <h2>About the Game</h2>
+            <p>This hand cricket game is a fun way to engage with a classic sport in a simple digital format. Choose numbers and see if you can outscore the computer!</p>
+            <button class="close-btn" onclick="closeSection('about-section')">Close</button>
+        </div>
+
+        <div id="how-to-play-section" class="info-section" style="display:none;">
+            <h2>How to Play</h2>
+            <p>1. Choose a number between 1 and 6.<br>
+               2. The computer will randomly choose a number.<br>
+               3. If your number matches the computer's, you're out.<br>
+               4. The player and computer will take turns batting.<br>
+               5. The total score after both innings determines the winner!</p>
+            <button class="close-btn" onclick="closeSection('how-to-play-section')">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
